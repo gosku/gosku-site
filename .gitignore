@@ -1,0 +1,14 @@
+# Where static site is published to
+/public
+
+# The staging area for CSS and images
+/resources
+
+# Temp files
+.hugo_build.lock
+
+# Ctags
+/tags
+
+# Something pre-commit seems to create
+node_modules
