@@ -1,0 +1,11 @@
+<h2>Recent Posts</h2>
+<ul>
+  {{ range .Site.RegularPages }}
+    <li>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+      <p>{{ .Summary }}</p>
+      <p>Tags: {{ range .Params.tags }}{{ . }} {{ end }}</p>
+    </li>
+  {{ end }}
+</ul>
