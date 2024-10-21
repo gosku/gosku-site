@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ .Content }}
+  <div class="articles">
+    <h3>Recent content</h3>
+    {{ range site.RegularPages }}
+
+      <div class="article_summary">
+        <div class="meta">
+          {{ .Date.Format "January 02, 2006" }}<br/>
+          <div class="tags">
+            {{ if isset .Params "tags" }}
+              {{ $num_tags := len .Params.Tags }}
+              {{ range $index, $tag := .Params.Tags }}{{ if ne $index 0 }},{{ end}} <a href="/tags/{{ $tag | urlize }}">{{ . }}</a>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+         <div class="main">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <p>{{ .Description|markdownify }}</p>
+            </div>
+
+      </div>
+
+
+    {{ end }}
+  </div>
+{{ end }}

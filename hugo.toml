@@ -1,17 +1,7 @@
 title = "Juan Romero Cortés"
 baseURL = "https://gosku.github.io/"
 languageCode = "en-us"
-theme = "gosku-theme"
+theme = "gosku-minimal"
 
-[menus]
-  main = [
-    { name = "Home", url = "/" },
-    { name = "Writing", url = "/writing/" },
-    { name = "About", url = "/about/" },
-    { name = "Now", url = "/now/" }
-  ]
 
-[params]
-  recentPostsCount = 5
-  recentPostsType = "posts"  # or "notes"
 
