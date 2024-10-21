@@ -1,9 +1,9 @@
 ---
 title: "How to blog from your text editor"
 date: 2024-10-15T07:53:01+11:00
-tags: []
+tags: ["blogs", "markdown"]
 featured_image: ""
-description: ""
+description: "An introduction to Hugo"
 draft: true
 ---
 
